@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[个人页面]郭诗涵-华北水利水电大学在读/郑州</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 	750px){
+                    .switch{position:relative;display:inline-block!important;width:60px;height:34px;}
+                    .switch input{display:none;}
+                    .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s;}
+                    .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:white;-webkit-transition:.4s;transition:.4s;}
+                    input:checked + .slider{background-color:#1abc9c;}
+                    input:focus + .slider{box-shadow:0 0 1px #1abc9c;}
+                    input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}.slider.round{border-radius:34px;}
+                    .slider.round:before{border-radius:50%;}
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- 头像照片 -->
+                    <img class="avatar" src="assets/images/avatar.jpg" onload="loading()">
+                </section>
+
+                <h1 class="name">郭诗涵</h1>
+                <h4 class="info-job">在读大学生 / 郑州 </h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>郭诗涵 / 女 / 21岁/ 党员</span>
+                    </li>
+                    <li>
+                        <label>英语水平</label>
+                        <span>CET-4</span>
+                    </li>
+                    <li>
+                        <label>计算机水平</label>
+                        <span>普通</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:15168285219" target="_blank">18639311414</a>
+                    </li>
+                    <li>
+                        <label>邮箱</label>
+                        <a href="mailto:ze.zh@hotmail.com" target="_blank">1530569331qq.com</a>
+                    </li>
+                    <li>
+                        <label>个人主页</label>
+                        <a href="http://lurr23333.com/" target="_blank">lurr23333.com/</a>
+                    </li>
+                    <li>
+                        <label>Github</label>
+                        <a href="https://github.com/lurr23333" target="_blank">github.com/lurr23333</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>技能点</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>HTML</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>CSS</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>JavaScript</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>React</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Node.js</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>小程序</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+                <hr/>
+                <img src="https://github.com/if2er/FeZaoDuKe-Collection/blob/master/ifeees.jpg?raw=true" style="width: 100%;" alt="">
+            </section>
+
+            <!-- 技术栈 -->
+            <!-- <div class="stack info-unit">
+                    <h2><i class="fa fa-code" aria-hidden="true"></i>其他</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <label>前端</label>
+                            <span>React、jQuery、微信小程序、Bootstrap、SASS、LESS</span>
+                        </li>
+                        <li>
+                            <label>后端</label>
+                            <span>Node.js、MySQL、MongoDB、WordPress、ThinkPHP</span>
+                        </li>
+                        <li>
+                            <label>其他</label>
+                            <span>Git、SVN、Markdown</span>
+                        </li>
+                    </ul>
+                </div> -->
+        </section>
+
+        <section class="main">
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+                <hr/>
+                <ul>
+            
+                    <li>
+                        <h3>
+                            <span>华北水利水电大学 - 软件工程专业</span>
+                            <time>2019.9-今</time>
+                        </h3>
+                        <p>专业排名
+                            <mark>100/291</mark>
+						在校期间积极进取，努力学习各种专业相关知识，积极参加校内各项活动，有着丰富的大学阅历。现修主要专业有Java、python、SQ等计算机语言。
+							</p>
+							<p>自我评价
+							    <mark>-</mark>
+							本人性格活泼开朗，思维创造性较强，易于沟通，在团队方面有着集体至上的意识，能够高效率完成各项任务。
+								</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 工作经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>大学经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[经历1]大一加入校大学生志愿者联合会</span>
+                            <time>2019.9 至 2020.6</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>期间，主要负责各项活动的组织策划工作，
+                                组织活动<mark>快闪</mark>，以及
+                                <mark>百人百车</mark>。</li>
+                            <li>能够较高质量完成组织各项活动
+                                <mark>被评为优秀干事</mark>。</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[经历2]班内团支书</span>
+                            <time>2019.10-今</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>
+                                <mark>负责团日活动等各项活动执行</mark>
+                                <a href="http://itsay.tech/162/" target="_blank">
+                                    <i class="fa fa-link" aria-hidden="true"></i></a></li>
+                            <li>协调班级内各项工作
+                                <mark>♥</mark></li>
+                            <li></li>
+                            <li>
+                                <mark>♥</mark>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-link" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </li>
+					<ul>
+					    <li>
+					        <h3>
+					            <span>[经历3]加入院主持队</span>
+					            <time>2019.9 至 2021.9</time>
+					        </h3>
+					        <ul class="info-content">
+					            <li>负责院内各项活动的主持工作，
+					                主要活动<mark>院内团建</mark>以及
+					                <mark>院内辩论主持</mark></li>
+					            <li>有较高的处理应急事件的能力，综合素质较高
+					                <mark>后任副队职务</mark></li>
+					        </ul>
+					    </li>
+                </ul>
+            </section>
+
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>个人爱好</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[1]收集</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time></time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>♥</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [1]收集，就是通过各种手段进行相关项目需要的资料进行收集
+								可以通过同事、朋友、以及网络等。我们会收集到大量有用无用的信息，我们需要对这些信息进行一个大概的浏览，并把自己觉得的重要信息进行记录，以备以后可以再次查询。  
+实现多类型多来源医学科学数据的提交、管理和共享
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [2]邮票收集
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [3]书本收集
+                                <mark>包括国内外名著</mark>♥
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [4]手工品收集</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[2]思考</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time></time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>最重要的一个过程</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [1]任何的知识或者经验，没有经过自己的思考，没有储存在自己的脑海中，在时间的长河中，会很快的就将这部分的知识洗刷干净。
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [2]我们在阅读资料的时候，我们会看到各种各样的观点，当我们理性的分析这些观点的时候，我们会得到这些观点是正确的还是错误的结论
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [3]感性的方式重新将所有的观点杂糅到一起时，我们会得到一种新的、超越所有观点的结论。
+                                <mark>理性</mark> 和
+                                <mark>思考</mark> 深入理解
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [4]每当经过这种思考，我的思维水平就会有大幅度的提高，我的眼光也不会仅仅局限于书中人物的观点了。思考的结果将成为我灵魂的一部分。 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[3]学习</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time>♥</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>学习是一个不断沉淀自己的过程</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [1]实现自我价值
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [2]提升自身能力
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [3]丰富自我
+                                <mark>提升</mark> 和
+                                <mark>进步</mark> 不断完善自己
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [4]会对某些事物知识，有更深理解
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[4]运动</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time></time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>运动是一个良好的自我调节方式</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [1]可以是我始终保持良好的精神面貌
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [2]强健的身体
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [3]
+                                <mark>活力</mark> 和
+                                <mark>精神</mark> 结合
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [4]运动分泌的荷尔蒙能使我更加快乐
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>回首三年的大学生涯,有渴望、有追求、有成功也有失败,我孜孜不倦,执着探求,百般锻炼,逐渐成为了一个能适应社会要求的新时代大学生，并为以后的工作打下坚实的基础。且我相信：用心就一定能赢得精彩！勤奋的我将以永不服输的韧劲融入社会。
+</h2>
+                <hr/>
+                <p>♥
+                    <span class="mark-txt">“多静多思考，反省不张扬”</span>是我给自己总结的“十字箴言”，鞭策自己做人既不能以己度人，也不以人观己，要脚踏实地做事，坚持自己的梦想和本心。</p>
+            </section>
+        </section>
+    </article>
+
+
+
+    <footer class="footer">
+        <p>lurr23333文档最后更新时间为
+            <time>2022年11月9日</time>.</p>
+    </footer>
+
+    <!-- 侧栏 -->
+    <aside>
+        <ul>
+            <li>
+                <a href="https://gitee.com/itsay/resume" target="_blank">源代码</a>
+            </li>
+            <li>
+                <a href="http://if2er.com/" target="_blank">Blog</a>
+            </li>
+        </ul>
+    </aside>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
